@@ -1,5 +1,5 @@
 body{
-    background-color: deeppink;
+    background-image: linear-gradient(to right, blue, purple, red, yellow, orange);
 }
 
 .feather{
