@@ -88,20 +88,21 @@
 
 .submit-btn {
     width: 85%;
-    padding: 10px 30px;
+    padding: 10px 10px 15px 15px;
     cursor: pointer;
     display: block;
     margin: auto;
-    background: linear-gradient(to right, whitesmoke);
+    background: whitesmoke;
     border: 0;
     outline: none;
     border-radius: 30px;
     font-family: 'Oswald', sans-serif;
-    font-size: medium;
+    font-size: large;
+    text-decoration: none;
 }
 
 .check-box {
-    margin: 30px 10px 24px 0;
+    margin: 30px 10px 15px 0;
 }
 
 span {
