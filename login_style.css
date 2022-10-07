@@ -36,7 +36,7 @@
     border-radius: 30px;
 }
 
-.toggle-btn { /* judulnya */
+.btn-title { /* judulnya */
     padding: 10px 30px;
     background: transparent;
     border: 0;
@@ -111,9 +111,9 @@ span {
     position: absolute;
 }
 
-#login {
+/*#login {
     left: 50px;
 }
 #register {
     left: 450px;
-}
+} */
