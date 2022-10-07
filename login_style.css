@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Peralta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Peralta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Arvo:ital@1&family=Peralta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@500&family=Peralta&display=swap');
+
 * { 
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
 
-.hero {
+.hero {   /* background image*/
     height: 100%;
     width: 100%;
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(Nissan\ GTR\ R34.jpg);
@@ -13,7 +18,7 @@
     position: absolute;
 }
 
-.form-box {
+.form-box { /* background form box */
     width: 380px;
     height: 450px;
     position: relative;
@@ -23,7 +28,7 @@
     overflow: hidden;
 }
 
-.button-box {
+.button-box { /* Judul didalam form box  */
     width: 220px;
     position: relative;
     margin: 35px auto;
@@ -31,7 +36,7 @@
     border-radius: 30px;
 }
 
-.toggle-btn {
+.toggle-btn { /* judulnya */
     padding: 10px 30px;
     background: transparent;
     border: 0;
@@ -40,11 +45,11 @@
     right: -19.8%;
     font-size: larger;
     bottom: 0.5cm;
-    font-family: 'roboto', sans-serif;
+    font-family: 'Peralta', sans-serif;
     color: black;
 }
 
-.underline {
+.underline { /* Pembatas antara judul login dengan pengisian id dan pw */
     width: 390px;
     position: absolute;
     right: -86px;
@@ -62,7 +67,7 @@
 /*} */
 
 
-.input-group {
+.input-group { /* pengisian data seperti user ID dan password */
     top: /*168px*/ 130px;
     position: absolute;
     width: 290px;
@@ -77,7 +82,8 @@
     border-right: 0;
     border-bottom: 1px solid #999;
     outline: none;
-    background: transparent;                                                     
+    background: transparent;  
+    font-family: 'Peralta', sans-serif;                                                   
 }
 
 .submit-btn {
@@ -90,10 +96,12 @@
     border: 0;
     outline: none;
     border-radius: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-size: medium;
 }
 
 .check-box {
-    margin: 30px 10px 30px 0;
+    margin: 30px 10px 24px 0;
 }
 
 span {
