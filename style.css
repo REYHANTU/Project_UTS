@@ -73,3 +73,13 @@ body{
     color: blue;
     font-size: 18px;
 }
+.coupon h5{
+    background: rgb(247, 179, 179);
+    color: rgb(27, 26, 26);
+    border: none;
+    padding: 6px 12px;
+    font-weight: 700;
+}
+.coupon{
+    background-color:  yellowgreen;;
+}
