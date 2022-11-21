@@ -16,13 +16,23 @@
                 <hr color="pink" class="underline">
             </div>
             <form id="login" class="input-group">
-                <input type="text" class="input-field" placeholder="User Id" required>
-                <input type="password" class="input-field" placeholder="Enter Password" required>
-                <input type="checkbox" class="check-box"><span>Remember Your Password</span>        
-                <center><a href="home.html" class="submit-btn">login</a></center>
+                <!--
+                    <input type="text" class="input-field" placeholder="Email" required>
+                    <input type="password" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="check-box"><span>Remember Your Password</span>        
+                    <center><a href="home.html" class="submit-btn">login</a></center>
+                    <a href="Signup.html" class="link">don't have an account? Register one</a>
+                -->
+                <h1 class="heading">login</h1>
+                <input type="email" placeholder="email" autocomplete="off" class="email" required>
+                <input type="password" placeholder="password" autocomplete="off" class="password" required>
+                <button class="submit-btn">log in</button>
+                <a href="form.js" class="link">don't have an account? Register one</a>
+
             </form>
         </div>
     </div>
 
+    <script src="form.js"></script>
 </body>
 </html>
