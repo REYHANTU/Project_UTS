@@ -2,27 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log In</title>
+    <title>Login Page</title>
+
     <link rel="stylesheet" href="login_style.css">
+
 </head>
 <body>
-    <div class="hero">
-        <div class="form-box">
-            <div class="button-box">
-                <div id="btn"></div>
-                    <button type="button" class="btn-title">LOG IN</button>
-                <hr color="pink" class="underline">
-            </div>
-            <form id="login" class="input-group">
-                <input type="text" class="input-field" placeholder="Email" required>
-                <input type="password" class="input-field" placeholder="Enter Password" required>
-                <input type="checkbox" class="check-box"><span>Remember Your Password</span>        
-                <center><a href="home.html" class="submit-btn">login</a></center>
-            </form>
-        </div>
-        <center><a href="Signup.html" class="link">don't have an account? Register one</a></center>
+
+    <div class="alert-box">
+        <p class="alert"></p>
+    </div>
+
+    <div class="form">
+        <h1 class="heading">login</h1>
+        <input type="email" placeholder="email" autocomplete="off" class="email" required>
+        <input type="password" placeholder="password" autocomplete="off" class="password" required>
+        <button class="submit-btn">log in</button>
+        <a href="Signup.html" class="link">don't have an account? Register one</a>
     </div>
 
     <script src="form.js"></script>
