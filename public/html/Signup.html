@@ -3,25 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register Page</title>
+    <title>Sign Up Page</title>
 
-    <link rel="stylesheet" href="signup_style.css">
-
+    <link rel="stylesheet" href="../css/signup_style.css">
+    
 </head>
 <body>
-
-    <div class="alert-box">
-        <p class="alert"></p>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                    <button type="button" class="btn-title">Sign Up</button>
+                <hr color="pink" class="underline">
+            </div>
+            <form id="signup" class="input-group">
+                <input type="text" class="input-field" placeholder="User Name" required>
+                <input type="text" class="input-field" placeholder="Email" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Your Password</span>        
+                <center><a href="../html/home.html" class="submit-btn">signup</a></center>
+            </form>
+        </div>
+        <center>
+            <a href="../html/Login.html" color="yellow">Already have an account? Login here</a>
+        </center>
     </div>
-
-    <div class="form">
-        <h1 class="heading">Sign Up</h1>
-        <input type="text" placeholder="name" autocomplete="off" class="name" required>
-        <input type="email" placeholder="email" autocomplete="off" class="email" required>
-        <input type="password" placeholder="password" autocomplete="off" class="password" required>
-        <button class="submit-btn">register</button>
-        <a href="Login.html" class="link">already have an account ? log in here</a>
-    </div>
-
-    <script src="form.js"></script>
 </body>
+</html>

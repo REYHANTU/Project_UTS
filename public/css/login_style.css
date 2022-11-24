@@ -1,111 +1,120 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Peralta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Peralta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Arvo:ital@1&family=Peralta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@500&family=Peralta&display=swap');
+
+* { 
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-*:focus{
-    outline: none;
-}
-
-body{
-    position: relative;
+.hero {   /* background image*/
+    height: 100%;
     width: 100%;
-    min-height: 100vh;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url('Nissan\ GTR\ R34.jpg');
-    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(../image/NissanGTR.jpg);
     background-position: center;
-    font-family: 'roboto', sans-serif;
-}
-
-.form{
-    width: 400px;
-    height: auto;
-    color: #fff;
-    font-family: 'roboto', sans-serif;
-}
-
-.heading{
-    opacity: 0;
-    text-transform: capitalize;
-    text-align: center;
-    font-size: 80px;
-    font-weight: 300;
-    margin-bottom: 50px;
-}
-
-input,
-.submit-btn{
-    opacity: 0;
-    width: 80%;
-    height: 35px;
-    display: block;
-    margin: 20px auto;
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.3);
-    border: none;
-    color: #fff;
-    padding: 15px;
-    transition: .5s;
-    text-transform: capitalize;
-}
-
-input::placeholder{
-    color: #fff;
-}
-
-input:focus,
-.submit-btn:hover{
-    background: #fff;
-    color: #000;
-}
-
-input:focus::placeholder{
-    color: #000;
-}
-
-.submit-btn{
-    width: auto;
-    padding: 0 20px;
-    cursor: pointer;
-    margin: 50px auto 0;
-    opacity: 0;
-}
-
-.link{
-    opacity: 0;
-    text-align: center;
-    text-transform: capitalize;
-    color: rgba(255, 255, 255, 0.5);
-    display: block;
-    margin: 30px auto;
-}
-
-.link:hover{
-    color: #fff;
-}
-
-.alert-box{
+    background-size: cover;
     position: absolute;
-    top: -100%;
-    left: 50%;
-    transform: translateX(-50%);
-    min-width: 150px;
-    max-width: 90%;
-    width: auto;
-    height: auto;
-    padding: 10px;
-    text-transform: capitalize;
-    background: rgb(255, 119, 119);
-    border-top: 10px solid rgb(255, 37, 37);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    color: #fff;
-    font-family: 'roboto', sans-serif;
-    text-align: center;
-    transition: 1s;
+}
+
+.form-box { /* background form box */
+    width: 380px;
+    height: 450px;
+    position: relative;
+    margin: 6% auto;
+    background: rgb(209, 150, 160);
+    padding: 5px;
+    overflow: hidden;
+}
+
+.button-box { /* Judul didalam form box  */
+    width: 220px;
+    position: relative;
+    margin: 35px auto;
+    /*box-shadow: 0 0 20px 9px #ff61241f; */
+    border-radius: 30px;
+}
+
+.btn-title { /* judulnya */
+    padding: 10px 30px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    right: -19.8%;
+    font-size: larger;
+    bottom: 0.5cm;
+    font-family: 'Peralta', sans-serif;
+    color: black;
+}
+
+.underline { /* Pembatas antara judul login dengan pengisian id dan pw */
+    width: 390px;
+    position: absolute;
+    right: -86px;
+    
+}
+
+/*#btn {
+    /*top: 0;
+    left: 0;
+    position: absolute;
+    width: 220px;
+    height: 100%; 
+    background: rgba(255, 255, 255, 0.4); /* #ff105f, #ffad05 */ 
+    /*border-radius: 30px; */
+/*} */
+
+
+.input-group { /* pengisian data seperti user ID dan password */
+    top: /*168px*/ 130px;
+    position: absolute;
+    width: 290px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0 ;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;  
+    font-family: 'Peralta', sans-serif;                                                   
+}
+
+.submit-btn {
+    width: 85%;
+    padding: 10px 10px 15px 20px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: whitesmoke;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-size: large;
+    text-decoration: none;
+}
+
+.check-box {
+    margin: 30px 10px 15px 0;
+}
+
+span {
+    color: black;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+
+#login {
+    left: 50px;
+}
+#register {
+    left: 450px;
 }
