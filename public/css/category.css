@@ -1,0 +1,33 @@
+body{
+    background: linear-gradient(to right,#009bff, #2ed0ff, #3A00FF);
+}
+
+.feather{
+    width: 25px;
+    height: 25px;
+    vertical-align: text-bottom;
+}
+
+.judul-kategori{
+    background-image: radial-gradient(circle, white, cyan);
+    color: darkviolet;
+    font-weight: bolder;
+}
+
+.card:hover{
+    border: 4px solid black;
+}
+
+.shortcut-icon-1{
+    length: 80px;
+    width: 80px;
+}
+
+.copyright{
+    color: blue;
+}
+
+.copyright-1{
+    color: blue;
+    font-size: 18px;
+}
