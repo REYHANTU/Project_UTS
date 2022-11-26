@@ -1,0 +1,40 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.1",
+    "celebrate": "^15.0.1",
+    "dotenv": "^16.0.3",
+    "express-async-errors": "^3.1.1",
+    "express-flash": "^0.0.2",
+    "express-jwt": "^7.7.7",
+    "express-session": "^1.17.3",
+    "joi": "^17.7.0",
+    "jsonwebtoken": "^8.5.1",
+    "method-override": "^3.0.0",
+    "moment": "^2.29.4",
+    "mongo": "^0.1.0",
+    "mongoose": "^6.7.3",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "uuid": "^9.0.0"
+  },
+  "name": "project_uts_webprogramming-2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js", 
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/REYHANTU/Project_UTS_WebProgramming.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/REYHANTU/Project_UTS_WebProgramming/issues"
+  },
+  "homepage": "https://github.com/REYHANTU/Project_UTS_WebProgramming#readme",
+  "description": ""
+}
