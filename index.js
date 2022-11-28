@@ -61,7 +61,7 @@ app.post("/log_in",(req,res)=>{
     return res.redirect('index.html')
 
 })
-  
+
 app.get("/",(req,res)=>{
     res.set({
         "Allow-access-Allow-Origin": '*'
