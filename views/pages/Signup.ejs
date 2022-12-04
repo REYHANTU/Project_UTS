@@ -34,8 +34,14 @@
             var email = document.getElementById("email").value;
             var pass = document.getElementById("password").value;
             
-            if (user_name=="" || email=="" || pass==""){
+            if (user_name==null || email==null || pass==null){
                 alert("Please fill in the blanks!!");
+                window.open("http://localhost:3800/Signup.html");
+            } else if (user_name=="reyhan" && email=="reyhan@gmail.com" && pass=="reyhan"){
+                alert("Congratulations you successfully signed up");
+                window.open("http://localhost:3800/index.html");
+            } else if (user_name!="reyhan" || email!="reyhan@gmail.com" || pass!="reyhan"){
+                alert("Incorrect email or password!!")
                 window.open("http://localhost:3800/Signup.html");
             }
         }
