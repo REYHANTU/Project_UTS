@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="../css/login_style.css">
+    
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                    <button type="button" class="btn-title">LOG IN</button>
+                <hr color="pink" class="underline">
+            </div>
+            <form id="login" class="input-group" action = "/login" method = "post">
+                <input type="text" id="email" class="input-field" placeholder="Email" required name = "email">
+                <input type="password" id="password" class="input-field" placeholder="Enter Password" required name = "password">
+                <input type="checkbox" class="check-box"><span>Remember Your Password</span>       
+                <center><a href="index.html" class="submit-btn" onClick="Login()">login</a></center>
+            </form>
+        </div>
+        <center>
+            <a href="Signup.html" color="yellow">Don't have an account? Sign Up first</a>
+        </center>
+    </div>
+    <script>
+        function Login(){ 
+            var email = document.getElementById("email").value;
+            var pass = document.getElementById("password").value;
+
+            if (email=="reyhan@gmail.com" && pass=="reyhan"){
+                alert("Congratulations you successfully logged in");
+                window.open("http://localhost:3800/index.html");
+            }else if (email==null || pass==null){
+                alert("Please fill in the blanks!!");
+                window.open("http://localhost:3800/Login.html")
+            }else if(email!="reyhan@gmail.com" || pass!="reyhan"){
+                alert("Incorrect email or password!!");
+                window.open("http://localhost:3800/Login.html")
+            }
+        }
+    </script>
+</body>
+</html>

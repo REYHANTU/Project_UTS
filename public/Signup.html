@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+
+    <link rel="stylesheet" href="../css/signup_style.css">
+    
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                    <button type="button" class="btn-title">SIGN UP</button>
+                <hr color="pink" class="underline">
+            </div>
+            <form id="signup" class="input-group">
+                <input type="text" id="user_name" class="input-field" placeholder="User Name" required>
+                <input type="text" id="email" class="input-field" placeholder="Email" required>
+                <input type="password" id="password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Your Password</span>        
+                <center><a href="index.html" class="submit-btn" onClick="Signup()">signup</a></center>
+            </form>
+        </div>
+        <center>
+            <a href="Login.html" color="yellow">Already have an account? Login here</a>
+        </center>
+    </div>
+    <script>
+        function Signup(){
+            var user_name = document.getElementById("user_name").value;
+            var email = document.getElementById("email").value;
+            var pass = document.getElementById("password").value;
+            
+            if (user_name=="" || email=="" || pass==""){
+                alert("Please fill in the blanks!!");
+                window.open("http://localhost:3800/Signup.html");
+            }
+        }
+    </script>
+</body>
+</html>
